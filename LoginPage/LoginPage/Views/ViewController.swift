@@ -28,6 +28,7 @@ class ViewController: UIViewController {
                 self.token = (json as! ResponseModel).access
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ImageListViewController") as! ImageListViewController
+                nextViewController.modalPresentationStyle = .fullScreen
                 nextViewController.token = self.token
                 self.present(nextViewController, animated:true, completion:nil)
             case .failure(let err):

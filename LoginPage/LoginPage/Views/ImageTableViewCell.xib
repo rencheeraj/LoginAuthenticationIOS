@@ -16,14 +16,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cnO-mW-WwA">
-                        <rect key="frame" x="0.0" y="0.0" width="379" height="200"/>
+                        <rect key="frame" x="10" y="10" width="359" height="180"/>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="cnO-mW-WwA" secondAttribute="trailing" id="5gs-rl-tz6"/>
-                    <constraint firstItem="cnO-mW-WwA" firstAttribute="leading" secondItem="uB5-Q7-UxF" secondAttribute="leading" id="FyQ-YC-kNj"/>
-                    <constraint firstAttribute="bottom" secondItem="cnO-mW-WwA" secondAttribute="bottom" id="KI8-Tj-1fN"/>
-                    <constraint firstItem="cnO-mW-WwA" firstAttribute="top" secondItem="uB5-Q7-UxF" secondAttribute="top" id="O2y-Wy-j08"/>
+                    <constraint firstAttribute="trailing" secondItem="cnO-mW-WwA" secondAttribute="trailing" constant="10" id="5gs-rl-tz6"/>
+                    <constraint firstItem="cnO-mW-WwA" firstAttribute="leading" secondItem="uB5-Q7-UxF" secondAttribute="leading" constant="10" id="FyQ-YC-kNj"/>
+                    <constraint firstAttribute="bottom" secondItem="cnO-mW-WwA" secondAttribute="bottom" constant="10" id="KI8-Tj-1fN"/>
+                    <constraint firstItem="cnO-mW-WwA" firstAttribute="top" secondItem="uB5-Q7-UxF" secondAttribute="top" constant="10" id="O2y-Wy-j08"/>
                 </constraints>
             </tableViewCellContentView>
             <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
