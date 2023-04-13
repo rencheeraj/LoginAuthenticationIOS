@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageListModel: Decodable {
+struct ImageListModel: Codable {
     let id: Int
-    let imageLink: String
+    let image_link: String
 }

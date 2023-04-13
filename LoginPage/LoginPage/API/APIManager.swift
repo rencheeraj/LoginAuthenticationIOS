@@ -12,7 +12,7 @@ enum APIErros : Error{
     case custom(message: String)
 }
 typealias Handler = (Swift.Result<Any?, APIErros>) -> Void
-typealias ListHandler = (Swift.Result<Any,APIErros>) -> Void
+typealias ListHandler = (Swift.Result<Any?,APIErros>) -> Void
 
 class APIManger{
     static let shareInstance = APIManger()
