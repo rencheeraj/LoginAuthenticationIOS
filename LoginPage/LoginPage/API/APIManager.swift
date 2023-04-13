@@ -46,7 +46,7 @@ class APIManger{
         }
     }
     
-    // MARK: - Login
+    // MARK: - DashBoard
     func detailImageList(token : String, completionHandler : @escaping ListHandler){
         
         let headers: HTTPHeaders = [.authorization(bearerToken: token),.accept("application/json")

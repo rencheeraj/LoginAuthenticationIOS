@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     
     private var token : String?
     @IBAction func loginAction(_ sender: Any) {
-//        guard let user = usernameText.text else {return}
-//        guard let password = passwordText.text else {return}
-        let user = "mtestuser"
-        let password = "mtest_spark"
+        guard let user = usernameText.text else {return}
+        guard let password = passwordText.text else {return}
+//        let user = "mtestuser"
+//        let password = "mtest_spark"
         let modelLogin = LoginModel(username:user , password: password)
         
         APIManger.shareInstance.loginApiCalling(login: modelLogin){(result) in
