@@ -10,3 +10,11 @@ import Foundation
 let base_url = "http://54.36.143.60:8000/"
 let login_url = "\(base_url)login/"
 let dashboard_url = "\(base_url)dashboard/"
+
+enum HTTPHeaderField : String{
+    case authentication = "Authorization"
+    case acceptType = "Accept"
+}
+enum ContentType : String{
+    case json = "application/json"
+}

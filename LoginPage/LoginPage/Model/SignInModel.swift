@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+// MARK: - LoginModel
 struct LoginModel : Encodable{
     let username : String
     let password : String
