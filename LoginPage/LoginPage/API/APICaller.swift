@@ -41,4 +41,30 @@ final class APICaller {
         
     }
     
+    public func detailImageList(token: String, completion: @escaping (Result<[ImageListModel], Error>) -> Void) {
+        let url = URL(string: dashboard_url)
+        var request = URLRequest(url: url!)
+        request.addValue(ContentType.json.rawValue, forHTTPHeaderField: "Content-Type")
+        request.addValue(ContentType.json.rawValue, forHTTPHeaderField: "Accept")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        request.httpMethod = "GET"
+
+        let task = URLSession.shared.dataTask(with: request) { data, _, error in
+            if let error = error {
+                completion(.failure(error))
+            }
+            else if let data = data {
+                do {
+                    let result : [ImageListModel] = try JSONDecoder().decode([ImageListModel].self, from: data)
+                    print("Data: \(result)")
+                    completion(.success(result))
+                }
+                catch {
+                    completion(.failure(error))
+                }
+            }
+        }
+        task.resume()
+        
+    }
 }

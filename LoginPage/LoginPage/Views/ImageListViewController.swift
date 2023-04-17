@@ -17,7 +17,7 @@ class ImageListViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        APIManger.shareInstance.detailImageList(token: self.token!) {(result) in
+        APICaller.shared.detailImageList(token: self.token!) {(result) in
             switch result{
             case .success(let json):
                 print(json)
