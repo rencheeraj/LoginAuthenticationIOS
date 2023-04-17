@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740DE83529ED45B300DD2884 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740DE83429ED45B300DD2884 /* APICaller.swift */; };
 		74167CB829E819520030E8DE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 74167CB729E819520030E8DE /* Kingfisher */; };
 		74167CBA29E81B1C0030E8DE /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74167CB929E81B1C0030E8DE /* ImageTableViewCell.xib */; };
 		74167CBD29E821EA0030E8DE /* SignInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74167CBC29E821EA0030E8DE /* SignInVM.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		740DE83429ED45B300DD2884 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		74167CB929E81B1C0030E8DE /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		74167CBC29E821EA0030E8DE /* SignInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVM.swift; sourceTree = "<group>"; };
 		7418856C29E79B1A0049BAC1 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				7418856F29E79C000049BAC1 /* APIManager.swift */,
+				740DE83429ED45B300DD2884 /* APICaller.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				7418857029E79C000049BAC1 /* APIManager.swift in Sources */,
 				74900D6929E719B200877AF4 /* AppDelegate.swift in Sources */,
 				74900D6B29E719B200877AF4 /* SceneDelegate.swift in Sources */,
+				740DE83529ED45B300DD2884 /* APICaller.swift in Sources */,
 				7418857B29E7F5390049BAC1 /* ImageListViewController.swift in Sources */,
 				7418857D29E815A70049BAC1 /* ImageTableViewCell.swift in Sources */,
 				7418857329E79E4D0049BAC1 /* Constants.swift in Sources */,

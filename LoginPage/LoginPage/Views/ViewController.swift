@@ -15,13 +15,13 @@ class ViewController: UIViewController {
     
     private var token : String?
     @IBAction func loginAction(_ sender: Any) {
-        guard let user = usernameText.text else {return}
-        guard let password = passwordText.text else {return}
-//        let user = "mtestuser"
-//        let password = "mtest_spark"
+//        guard let user = usernameText.text else {return}
+//        guard let password = passwordText.text else {return}
+        let user = "mtestuser"
+        let password = "mtest_spark"
         let modelLogin = LoginModel(username:user , password: password)
         
-        APIManger.shareInstance.loginApiCalling(login: modelLogin){(result) in
+        APICaller.shared.loginApiCalling(login: modelLogin){(result) in
             switch result{
             case .success(let json):
                 print(json)
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
                 self.present(nextViewController, animated:true, completion:nil)
             case .failure(let err):
                 print(err.localizedDescription )
+                
             }
         }
         
