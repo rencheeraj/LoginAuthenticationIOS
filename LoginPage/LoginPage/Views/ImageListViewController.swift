@@ -59,8 +59,9 @@ extension ImageListViewController : UITableViewDataSource{
                     fatalError("Unable to downcast the cell in cellForRowAt to ItemTableViewCell")
                 }
         
-            let url = URL(string: imageData![indexPath.row].image_link ?? "")
-            cell.imageListView.kf.setImage(with: url)
+        let url = imageData![indexPath.row].image_link 
+//            cell.imageListView.kf.setImage(with: url)
+        cell.configure(url: url)
             return cell
     }
     

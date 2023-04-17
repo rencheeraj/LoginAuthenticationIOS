@@ -20,5 +20,8 @@ class ImageTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func configure(url : String){
+        imageListView.load(urlString: url)
+    }
 
 }
